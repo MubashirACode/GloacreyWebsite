@@ -21,7 +21,7 @@ await connectClodinary
 
 // Allow multiple origins
 const allowedOrigins = ["http://localhost:5173"];
-app.post('/stripe' , express.raw({type:'application/json'});  stripwebhooks )
+app.post('/stripe', express.raw({ type: 'application/json' }), stripwebhooks);
 
 // Middleware configuration
 app.use(express.json());
