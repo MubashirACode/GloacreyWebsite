@@ -20,7 +20,7 @@ await connectDB();
 await connectClodinary
 
 // Allow multiple origins
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5173" ,"https://gloacrey-website-dp4v.vercel.app"];
 app.post('/stripe', express.raw({ type: 'application/json' }), stripwebhooks);
 
 // Middleware configuration
